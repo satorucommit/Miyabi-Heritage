@@ -1,36 +1,60 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Miyabi Heritage 雅
+
+A visually immersive web experience exploring the timeless elegance of traditional Japanese culture — its arts, architecture, and philosophy.
+
+## Overview
+
+Miyabi (雅) translates to *elegance, refinement, and courtliness*. This project brings that concept to life through a modern, animated web interface covering:
+
+- **Arts** — Tea ceremony, calligraphy, and the mastery of traditional disciplines
+- **Architecture** — Shrines, temples, and pagodas in harmony with nature
+- **Philosophy** — Zen, Wabi-Sabi, Kintsugi, and the Japanese worldview
+
+## Tech Stack
+
+- [Next.js 16](https://nextjs.org/) — App Router
+- [React 19](https://react.dev/)
+- Custom components: magnetic buttons, scroll reveal animations, loading screen, page transitions, and a custom cursor
 
 ## Getting Started
 
-First, run the development server:
-
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## Project Structure
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```
+src/
+├── app/
+│   ├── page.js           # Home — hero, intro grid, historical eras
+│   ├── arts/             # Japanese arts section
+│   ├── architecture/     # Architecture section
+│   ├── philosophy/       # Philosophy section
+│   └── layout.js         # Root layout with navigation & footer
+└── components/
+    ├── CustomCursor.js
+    ├── MagneticButton.js
+    ├── MagneticLink.js
+    ├── ScrollReveal.js
+    ├── TransitionWrapper.js
+    ├── LoadingScreen.js
+    ├── Navigation.js
+    └── Footer.js
+```
 
-## Learn More
+## Scripts
 
-To learn more about Next.js, take a look at the following resources:
+| Command | Description |
+|---|---|
+| `npm run dev` | Start development server |
+| `npm run build` | Build for production |
+| `npm run start` | Start production server |
+| `npm run lint` | Run ESLint |
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Deployment
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Deploy instantly on [Vercel](https://vercel.com/new). See the [Next.js deployment docs](https://nextjs.org/docs/app/building-your-application/deploying) for other options.
